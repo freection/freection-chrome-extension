@@ -3,8 +3,15 @@ A chrome extension to integrate with Freection
 
 ## Getting Started
 
+### The code
+
 * manifest.json - the root of the extension.
 * /content.js - the base code file, where everything starts to run.
+
+### Prerequisites
+
+* Install npm
+* Then run in the root directory: npm install
 
 ## How to build?
 

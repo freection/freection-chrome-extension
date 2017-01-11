@@ -12,6 +12,7 @@ function go(sdk) {
 		FreectionApi.getUser(options).then(freectionUser => {
 			const gmailUser = getGmailUser(sdk)
 			if (freectionUser.email === gmailUser) {
+				markExtensionInstalled(options.baseUrl)
 				addCss(sdk)
 				addDoButtonToEmailRows(sdk, options)
 				addDoButtonToEmailPage(sdk, options)
@@ -101,4 +102,8 @@ function syncEmailThings(options) {
 	emailThingsTimeout = setInterval(fetchEmailThings, 1000 * 60)
 }
 
-
+function markExtensionInstalled(url) {
+	if (url && url.startsWith(window.location.origin)) {
+		window.postMessage('FreectionChromeExtension', url);
+	}
+}

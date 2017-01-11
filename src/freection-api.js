@@ -1,4 +1,4 @@
-const ResourceUtil = require('../../app/util/resource-util')
+const ResourceUtil = require('./resource-util')
 
 function getUser(options) {
     return ResourceUtil.get(options.baseUrl + '/api/general/user')

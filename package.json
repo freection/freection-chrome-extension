@@ -1,0 +1,33 @@
+{
+  "name": "freection-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "bash ./scripts/build",
+    "package": "bash ./scripts/package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freection/freection-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freection/freection-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/freection/freection-chrome-extension#readme",
+  "dependencies": {
+    "babel-cli": "6.14.0",
+    "babel-core": "6.14.0",
+    "babel-loader": "6.2.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
+    "babel-preset-es2015": "6.9.0",
+    "es6-promise": "4.0.5",
+    "isomorphic-fetch": "2.2.1",
+    "isomorphic-form-data": "0.0.1",
+    "kefir": "3.7.0",
+    "lodash": "4.17.4",
+    "webpack": "1.14.0"
+  },
+  "devDependencies": {}
+}

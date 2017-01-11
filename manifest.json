@@ -18,7 +18,7 @@
       "js": [
         "lib/inboxsdk.js",
         "lib/jquery-3.1.1.min.js",
-        "src/loader.js"
+        "src/content.js"
       ],
       "run_at": "document_end"
     }
@@ -31,6 +31,7 @@
     "https://inbox.google.com/",
     "https://freection.com/",
     "https://app.freection.com/",
+    "https://freection2.ngrok.io/",
     "storage"
   ],
   "web_accessible_resources": [

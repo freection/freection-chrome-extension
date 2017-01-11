@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rm -rf ./dist
+
+node_modules/.bin/webpack
+
+cp manifest.json ./dist
+cp templates/popup.html ./dist
+cp src/popup.js ./dist/src
+cp -r images ./dist
+cp -r lib ./dist
